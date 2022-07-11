@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
 
@@ -10,6 +11,27 @@ function Tools() {
           <Link href="/button-generator">
             <a>See it</a>
           </Link>
+        </div>
+        <div className="card-content">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos ex sunt, enim aut itaque pariatur obcaecati ullam
+              reiciendis laborum. A?
+            </p>
+          </div>
+          <div>
+            <Link href="/button-generator">
+              <a>
+                <img
+                  src="/button-generator.png"
+                  height="794"
+                  width="1268"
+                  alt="buton generator"
+                />
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="card">

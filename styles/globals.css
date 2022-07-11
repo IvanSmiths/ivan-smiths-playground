@@ -239,9 +239,30 @@ input[type="range"]::-webkit-slider-runnable-track {
   margin-bottom: 20px;
 }
 
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-content div:nth-child(1) {
+  width: 50%;
+  padding-right: 25%;
+}
+
+.card-content div:nth-child(2) {
+  width: 50%;
+}
+
+.card-content div:nth-child(2) img {
+  width: 100%;
+  height: auto;
+}
+
 .card-upper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .card:nth-child(1n) {
