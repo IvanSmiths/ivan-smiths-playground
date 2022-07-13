@@ -9,7 +9,7 @@ if (typeof window !== "undefined") {
 function ToolButton() {
   const [backgroundColor, setbackgroundColor] = useState("#d7f21d");
   const [textColor, setTextColor] = useState("#000000");
-  const [textSize, setTextSize] = useState(16);
+  const [textSize, setTextSize] = useState(26);
   const [borderActive, setBorderActive] = useState(false);
   const [borderColor, setBorderColor] = useState("#000000");
   const [borderPx, setBorderPx] = useState(2);
@@ -517,7 +517,7 @@ function ToolButton() {
           </div>
         </section>
       </div>
-      <div className="paragraph-cnt">
+      {/* <div className="paragraph-cnt">
         <div className="paragraph-title-cnt flex-center">
           <div>
             <h2>01/TOOLS</h2>
@@ -534,7 +534,7 @@ function ToolButton() {
             distinctio obcaecati necessitatibus! Reiciendis.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -22,7 +22,8 @@ function SchemaBuilder() {
   }, [schema]);
 
   return (
-    <div>
+    <div className="schema-builder-cnt">
+      <legend>Select a schema</legend>
       <select
         name="schema"
         id="schema"
