@@ -9,6 +9,7 @@ if (typeof window !== "undefined") {
 function ToolButton() {
   const [backgroundColor, setbackgroundColor] = useState("#d7f21d");
   const [textColor, setTextColor] = useState("#000000");
+  const [textSize, setTextSize] = useState(16);
   const [borderActive, setBorderActive] = useState(false);
   const [borderColor, setBorderColor] = useState("#000000");
   const [borderPx, setBorderPx] = useState(2);
@@ -40,8 +41,10 @@ function ToolButton() {
       ? `linear-gradient(${gradientDeg}deg, ${firstGradient} ${firstGradientPercentage}%, ${secondGradient} ${secondGradientPercentage}%)`
       : `${backgroundColor}`
   };
+  font-size: ${textSize}px,
   padding: ${paddingH}px ${paddingV}px;
   color: ${textColor};
+  cursor: pointer;
   font-weight: ${bold === true ? `bold` : "400"};
   border-radius: ${
     borderSingle === true
@@ -102,6 +105,31 @@ function ToolButton() {
                 type="checkbox"
                 value={bold}
                 onChange={() => setBold(!bold)}
+              />
+            </div>
+            <label htmlFor="textSize">Text size</label>
+            <div className="div-input-cnt">
+              <label className="label-text" htmlFor="textSizeText">
+                Text size
+              </label>
+              <input
+                id="textSizeText"
+                name="textSizeText"
+                type="text"
+                min="10"
+                max="100"
+                value={textSize}
+                onChange={(e) => setTextSize(e.target.value)}
+              />
+              <input
+                id="textSize"
+                name="textSize"
+                type="range"
+                min="10"
+                max="100"
+                step="1"
+                value={textSize}
+                onChange={(e) => setTextSize(e.target.value)}
               />
             </div>
             <div className="div-input-large-cnt">
@@ -457,6 +485,8 @@ function ToolButton() {
           <div className="tool-bnt-second">
             <button
               style={{
+                cursor: "pointer",
+                fontSize: `${textSize}px`,
                 padding: `${paddingH}px ${paddingV}px `,
                 color: `${textColor}`,
                 fontWeight: `${bold === true ? "bold" : "400"}`,

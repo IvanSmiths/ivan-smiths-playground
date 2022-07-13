@@ -29,9 +29,8 @@ function Tools() {
           <div className="card-content">
             <div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Dignissimos ex sunt, enim aut itaque pariatur obcaecati ullam
-                reiciendis laborum. A?
+                A button generator that helps you stylyng and prototyping your
+                styling ideas for your call to actions
               </p>
             </div>
             <div>
