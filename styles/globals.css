@@ -280,9 +280,6 @@ input[type="range"]::-webkit-slider-runnable-track {
 } */
 
 .wrapper {
-  margin-top: 100px;
-  padding-top: 150px;
-  padding-bottom: 1000px;
   width: 100%;
 }
 
@@ -322,13 +319,13 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 .card:nth-child(1n) {
-  top: 60px;
+  top: 0px;
 }
 .card:nth-child(2n) {
-  top: 100px;
+  top: 50px;
 }
 .card:nth-child(3n) {
-  top: 140px;
+  top: 100px;
 }
 .card:nth-child(4n) {
   top: 180px;

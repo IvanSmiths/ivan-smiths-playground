@@ -22,7 +22,7 @@ function Tools() {
         <div className="card">
           <div className="card-upper">
             <h2>Button generator</h2>
-            <Link href="/button-generator">
+            <Link href="/tools/button-generator">
               <a>See it</a>
             </Link>
           </div>
@@ -30,7 +30,7 @@ function Tools() {
             <div>
               <p>
                 A button generator that helps you stylyng and prototyping your
-                styling ideas for your call to actions
+                styling ideas for your call to actions!
               </p>
             </div>
             <div>
@@ -40,7 +40,7 @@ function Tools() {
                     src="/button-generator.png"
                     height="794"
                     width="1268"
-                    alt="buton generator"
+                    alt="button generator"
                   />
                 </a>
               </Link>
@@ -48,26 +48,32 @@ function Tools() {
           </div>
         </div>
         <div className="card">
-          <h2>
-            <span>Project #2</span>Title of the Project
-          </h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum,
-            perspiciatis blanditiis accusamus commodi consectetur id tempora rem
-            iure eligendi quos eos et autem ratione exercitationem earum laborum
-            ad a sequi!
-          </p>
-        </div>
-        <div className="card">
-          <h2>
-            <span>Project #3</span>Title of the Project
-          </h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum,
-            perspiciatis blanditiis accusamus commodi consectetur id tempora rem
-            iure eligendi quos eos et autem ratione exercitationem earum laborum
-            ad a sequi!
-          </p>
+          <div className="card-upper">
+            <h2>Schema generator</h2>
+            <Link href="/tools/schema-generator">
+              <a>See it</a>
+            </Link>
+          </div>
+          <div className="card-content">
+            <div>
+              <p>
+                Generate various schema for your website, from Breadcrubs to
+                WebPage schemas.
+              </p>
+            </div>
+            <div>
+              <Link href="/tools/schema-builder">
+                <a>
+                  <img
+                    src="/schema-builder.png"
+                    height="794"
+                    width="1268"
+                    alt="schema generator"
+                  />
+                </a>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </>
