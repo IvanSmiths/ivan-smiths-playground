@@ -26,8 +26,8 @@
   --color-text-primary: #f8f8f8;
   --color-text-inverse: #0e0e0c;
 
-  --color-bg-primary: #0d0d0d;
-  --color-bg-sub: #1c1c1c;
+  --color-bg-primary: #1c1c1c;
+  --color-bg-sub: #2e2e2e;
 
   --impactBigLine: clamp(2.2rem, 6.3vw, 5.6rem);
   --impactLargeLine: clamp(2.2rem, 14vw, 12.6rem);
