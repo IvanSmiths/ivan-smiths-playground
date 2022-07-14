@@ -27,7 +27,14 @@
   --color-text-primary: #f8f8f8;
   --color-text-inverse: #0e0e0c;
 
+  --impactBigLine: clamp(2.2rem, 6.3vw, 5.6rem);
+  --impactLargeLine: clamp(2.2rem, 14vw, 12.6rem);
+
+  --marginLayout: 10vw;
+  --marginBottomBlog: 3rem;
   --marginElement: 3rem;
+  --marginFooter: 15vw;
+  --marginSection: clamp(17rem, 24vw, 28rem);
 }
 
 html,
@@ -54,6 +61,56 @@ h2,
 h3 {
   font-size: 16px;
   color: var(--color-text-primary);
+}
+.btn-small-2 {
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    var(--main-color) 0%,
+    var(--main-color) 100%
+  );
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  border: 1px solid var(--color-text-primary);
+  padding: 1.6vw 3.5vw;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-size 0.4s, transform 0.4s, border 0.4s;
+}
+
+.btn-small-2:hover {
+  border: 1px solid var(--color-bg-primary);
+  color: black;
+  background-size: 100% 100%;
+  background-position: left center;
+}
+
+.btn-small {
+  background: linear-gradient(
+    to bottom,
+    var(--main-color) 0%,
+    var(--main-color) 100%
+  );
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  border: 1px solid var(--color-text-primary);
+  padding: 3.8rem 2.4rem;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-size 0.4s, transform 0.4s, border 0.4s;
+}
+
+.btn-icon {
+  padding: 1.4rem 1.4rem;
+}
+
+.btn-small:hover {
+  border: 1px solid var(--color-bg-primary);
+  color: black;
+  background-size: 100% 100%;
+  background-position: left center;
 }
 
 .extreme-font {
