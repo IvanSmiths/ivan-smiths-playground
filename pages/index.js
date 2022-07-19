@@ -59,7 +59,7 @@ export default function Home() {
         data-clipboard-action="copy"
         data-clipboard-target="#css"
       >
-        Copy To Clipboard
+        Copy To Clipboardzfuuzuiuz
       </button>
     </div>
   );
