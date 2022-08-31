@@ -86,57 +86,71 @@ function ToolButton() {
     <div>
       <div className="tool-btn-tool-cnt">
         <section className="tool-bnt-first-cnt">
+          <span>01 / Tools</span>
           <h1>Button generator</h1>
           <div className="tool-bnt-input-cnt">
-            <label className="bold" htmlFor="cta">
-              Call to action
-            </label>
-            <input
-              id="cta"
-              name="cta"
-              type="text"
-              value={cta}
-              onChange={(e) => setCta(e.target.value)}
-            />
-            <label htmlFor="bold">Bold:</label>
-            <input
-              id="bold"
-              name="bold"
-              type="checkbox"
-              value={bold}
-              onChange={() => setBold(!bold)}
-            />
-            <label className="label-text" htmlFor="textSizeText">
-              Text size
-            </label>
-            <label htmlFor="textSize">Text size</label>
-            <input
-              id="textSizeText"
-              name="textSizeText"
-              type="text"
-              min="10"
-              max="100"
-              value={textSize}
-              onChange={(e) => setTextSize(e.target.value)}
-            />
-            <input
-              id="textSize"
-              name="textSize"
-              type="range"
-              min="10"
-              max="100"
-              step="1"
-              value={textSize}
-              onChange={(e) => setTextSize(e.target.value)}
-            />
-            <label htmlFor="TextColor">Text Color</label>
-            <input
-              id="TextColor"
-              name="TextColor"
-              type="color"
-              value={textColor}
-              onChange={(e) => setTextColor(e.target.value)}
-            />
+            <span className="bold" htmlFor="">
+              Text
+            </span>
+            <div className="input-wrapper">
+              <label htmlFor="cta">Call to action:</label>
+
+              <input
+                id="cta"
+                name="cta"
+                type="text"
+                value={cta}
+                onChange={(e) => setCta(e.target.value)}
+              />
+            </div>
+            <div className="bold-wrapper">
+              <label htmlFor="bold">Bold:</label>
+              <input
+                id="bold"
+                name="bold"
+                type="checkbox"
+                value={bold}
+                onChange={() => setBold(!bold)}
+              />
+            </div>
+            <div className="input-wrapper">
+              <label className="label-text" htmlFor="textSizeText">
+                Text size:
+              </label>
+              <label htmlFor="textSize">Text size:</label>
+              <input
+                id="textSizeText"
+                name="textSizeText"
+                type="text"
+                className="input-number"
+                min="10"
+                max="100"
+                value={textSize}
+                onChange={(e) => setTextSize(e.target.value)}
+              />
+              <input
+                id="textSize"
+                name="textSize"
+                type="range"
+                className="input-slider"
+                min="10"
+                max="100"
+                step="1"
+                value={textSize}
+                onChange={(e) => setTextSize(e.target.value)}
+              />
+            </div>
+            <div className="input-wrapper">
+              <label htmlFor="TextColor">Text Color</label>
+              <input
+                id="TextColor"
+                name="TextColor"
+                type="color"
+                value={textColor}
+                onChange={(e) => setTextColor(e.target.value)}
+              />
+            </div>
+            <span className="bold span-spacing">Background</span>
 
             {gradient === false ? (
               <div className="flex-50">
@@ -221,14 +235,16 @@ function ToolButton() {
                 onChange={(e) => setGradient(!gradient)}
               />
             </div>
-            <label htmlFor="paddingV">Horizontal Padding</label>
-            <div className="div-input-cnt">
+            <span className="bold span-spacing">Padding</span>
+            <div className="input-wrapper">
+              <label htmlFor="paddingV">Horizontal Padding</label>
               <label className="label-text" htmlFor="paddingVText">
                 Horizontal Padding
               </label>
               <input
                 id="paddingVText"
                 name="paddingVText"
+                className="input-number"
                 type="text"
                 min="10"
                 max="100"
@@ -240,14 +256,16 @@ function ToolButton() {
                 name="paddingV"
                 type="range"
                 min="10"
+                className="input-slider"
                 max="100"
                 step="1"
                 value={paddingV}
                 onChange={(e) => setPaddingV(e.target.value)}
               />
             </div>
-            <label htmlFor="paddingH">Vertical Padding</label>
-            <div className="div-input-cnt">
+
+            <div className="input-wrapper">
+              <label htmlFor="paddingH">Vertical Padding</label>
               <label className="label-text" htmlFor="paddingHText">
                 Vertical Padding
               </label>
@@ -255,12 +273,14 @@ function ToolButton() {
                 id="paddingHText"
                 name="paddingHText"
                 type="text"
+                className="input-number"
                 min="7"
                 max="100"
                 value={paddingH}
                 onChange={(e) => setPaddingH(e.target.value)}
               />
               <input
+                className="input-slider"
                 id="paddingH"
                 name="paddingH"
                 type="range"
@@ -271,7 +291,7 @@ function ToolButton() {
                 onChange={(e) => setPaddingH(e.target.value)}
               />
             </div>
-
+            <span className="bold span-spacing">Radius</span>
             {borderSingle === true ? (
               <>
                 <label htmlFor="radiusUpLeft">Radius Up Left</label>
